@@ -3,9 +3,10 @@
 <head>
 	<title>HTML Academy: Nerds</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header calss="page-header">
+	<header class="page-header">
 		<a class="page-header__logo">
 			<img class="page-header__logo-image" src="images/logo.png" width="" height="" alt="Nerd's">
 		</a>
@@ -32,7 +33,7 @@
 		</nav>
 	</header>
 
-	<main class="page-main">
+	<main class="index-page__main">
 		<h1 class="visually-hidden">Дизайн студия из Краснодара</h1>
 
 		<div class="slider">
@@ -137,22 +138,38 @@
 		</section>
 	</main>
 
-		<footer class="page-footer">
-			<ul class="page-footer__social-list social-button">
-				<li class="social-button__item">
-					<a class="social-button__link" href="#">Вконтакте</a>
-				</li>
-				<li class="social-button__item">
-					<a class="social-button__link" href="#">Facebook</a>
-				</li>
-				<li class="social-button__item">
-					<a class="social-button__link" href="#">Instagram</a>
-				</li>
-			</ul>
-			<div class="page-footer__lead">
-				<b class="page-footer__title">Давайте дружить, это выгодно!</b>
-				<p class="page-footer__desc">Скидка 10% для друзей из социальных сетей.</p>
-			</div>
-		</footer>
+	<footer class="page-footer">
+		<ul class="page-footer__social-list social-button">
+			<li class="social-button__item">
+				<a class="social-button__link" href="#">Вконтакте</a>
+			</li>
+			<li class="social-button__item">
+				<a class="social-button__link" href="#">Facebook</a>
+			</li>
+			<li class="social-button__item">
+				<a class="social-button__link" href="#">Instagram</a>
+			</li>
+		</ul>
+		<div class="page-footer__lead">
+			<b class="page-footer__title">Давайте дружить, это выгодно!</b>
+			<p class="page-footer__desc">Скидка 10% для друзей из социальных сетей.</p>
+		</div>
+	</footer>
+
+	<section class="modal">
+		<div class="modal-wrapper">
+			<h2 class="modal-title">Напишите нам</h2>
+			<form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
+				<label class="modal-label__name" for="name">Ваше имя:</label>
+				<input class="modal-input__name" type="text" name="name" id="name" placeholder="Имя Фамилия">
+				<label class="modal-label__email" for="email">Ваш e-mail:</label>
+				<input class="modal-input__email" type="email" name="email" id="email" placeholder="email@example.com">
+				<label class="modal-label__text" for="text">Текст письма:</label>
+				<input class="modal-input__text" type="text" name="text" placeholder="В свободной форме">
+				<button class="modal-button__submit" type="submit">Отправить</button>
+				<button class="modal-button__close" type="button">Закрыть</button>
+			</form>
+		</div>
+	</section>
 </body>
 </html>
