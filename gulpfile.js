@@ -15,13 +15,13 @@ var server = require("browser-sync").create();
 var run = require("run-sequence");
 
 gulp.task("style", function () {
-  gulp.src("source/sass/style.scss")
+  gulp.src("source/sass/*.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
         autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("source/css/style.css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("source/css"))
