@@ -1,0 +1,33 @@
+$btn-c_red: #fb565a;
+$btn-bg-hover: #e74246;
+$btn-bg-active: #d7373b;
+$btn-tx-c-active: rgba(255, 255, 255, 0.3);
+$btn-tx_color: #ffffff;
+
+.slider-item__button {
+	display: block;
+	width: 240px;
+	padding: 13px 0;
+}
+
+.button-mod {
+	font-size: 16px;
+	line-height: 18px;
+	color: $btn-tx_color;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+
+	background-color: $btn-c_red;
+	border-radius: 3px;
+	border: none;
+
+	&:hover,
+	&:focus {
+		background-color: $btn-bg-hover;
+	}
+
+	&:active {
+		color: $btn-tx-c-active;
+	}
+}
