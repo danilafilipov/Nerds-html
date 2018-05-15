@@ -372,12 +372,21 @@ template {
   color: #000000; }
 
 .slider-item {
-  display: none; }
+  display: none;
+  padding: 78px 0 80px 0; }
   .slider-item:nth-child(1) {
-    display: block;
-    background-image: url("img/slide1.png");
+    background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
     background-position: 93% 18px; }
+  .slider-item:nth-child(2) {
+    display: block;
+    background-image: url("../img/slide2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0; }
+  .slider-item:nth-child(3) {
+    background-image: url("../img/slide3.png");
+    background-repeat: no-repeat;
+    background-position: 100% 20px; }
 
 .page-header__slider {
   position: relative; }
@@ -419,8 +428,8 @@ template {
     left: 50%;
     top: 50%;
     z-index: 2;
-    width: 4px;
-    height: 4px;
+    width: 8px;
+    height: 8px;
     margin: -4px;
     background-color: inherit;
     border: 2px solid #c1c1c1;
@@ -437,8 +446,8 @@ template {
   .page-header__slider-control i:after {
     content: "";
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 6px;
+    left: 6px;
     z-index: 1;
     width: 18px;
     height: 18px;
@@ -464,3 +473,42 @@ template {
     background-color: #e74246; }
   .button-mod:active {
     color: rgba(255, 255, 255, 0.3); }
+
+.offer-item {
+  width: 300px;
+  height: 350px; }
+  .offer-item:nth-child(1)::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 145px;
+    background-image: url("../img/illustration-1.png");
+    background-repeat: no-repeat;
+    background-position: top; }
+  .offer-item:nth-child(2)::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 145px;
+    background-image: url("../img/illustration-2.png");
+    background-repeat: no-repeat;
+    background-position: top; }
+  .offer-item:nth-child(3)::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 145px;
+    background-image: url("../img/illustration-3.png");
+    background-repeat: no-repeat;
+    background-position: top; }
+  .offer-item:nth-child(1n+1) {
+    margin-right: 100px; }
+
+.offer-list {
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0; }
