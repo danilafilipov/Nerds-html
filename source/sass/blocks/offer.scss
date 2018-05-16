@@ -1,5 +1,11 @@
 $color-p: #283136;
 
+.offer-wrap {
+	width: 1100px;
+	margin-left: 140px;
+	margin-top: 80px;
+}
+
 .offer-item {
 	width: 300px;
 	height: 350px;
@@ -45,7 +51,6 @@ $color-p: #283136;
 
 .offer-list {
 	display: flex;
-	width: 1100px;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -54,6 +59,9 @@ $color-p: #283136;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: regular;
+	text-transform: uppercase;
+	margin-top: 26px;
+	margin-bottom: 10px;
 	color: #000000;
 }
 
@@ -62,4 +70,5 @@ $color-p: #283136;
 	font-size: 16px;
 	line-height: 24px;
 	color: $color-p;
+	margin-bottom: 31px;
 }

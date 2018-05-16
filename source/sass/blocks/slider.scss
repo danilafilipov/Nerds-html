@@ -2,15 +2,15 @@ $background-color_slider: #eeeeee;
 
 .slider-item {
 	display: none;
-	padding: 78px 0 80px 0;
+	padding: 74px 0 80px 0;
 
 	&:nth-child(1) {
+		display: block;
 		background-image: url("../img/slide1.png");
 		background-repeat: no-repeat;
-		background-position: 93% 18px;
+		background-position: 451px 13px;
 	}
 	&:nth-child(2){
-		display: block;
 		background-image: url("../img/slide2.png");
 		background-repeat: no-repeat;
 		background-position: 100% 0;
@@ -39,8 +39,8 @@ $background-color_slider: #eeeeee;
 
 .slider-item__promo {
 	max-width: 600px;
-	margin: 0;
-	margin-bottom: 27px;
+	margin: 0 20px 28px;
+
 
 	font-size: 55px;
 	line-height: 55px;
@@ -49,20 +49,19 @@ $background-color_slider: #eeeeee;
 
 .slider-item__desc {
 	max-width: 430px;
-	margin: 0;
-	margin-bottom: 38px;
+	margin: 0 20px 40px;
+	line-height: 22px;
 }
 
 .page-header__slider-control {
 	position: absolute;
-	left: 50%;
-	bottom: 104px;
+	left: 630px;
+	bottom: 102px;
 	z-index: 100;
 
 	width: 160px;
 	height: 18px;
 
-	text-align: center;
 	font-size: 0;
 	transform: translateX(-50%);
 
@@ -91,6 +90,7 @@ $background-color_slider: #eeeeee;
 	width: 18px;
 	height: 18px;
 	padding: 15px;
+	margin-right: 5px;
 
 	border-radius: 50%;
 	cursor: pointer;

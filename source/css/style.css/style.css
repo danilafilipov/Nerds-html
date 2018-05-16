@@ -324,7 +324,8 @@ template {
   display: none; }
 
 .page-header {
-  min-height: 545px; }
+  min-height: 545px;
+  background-color: #eeeeee; }
 
 .page-header-wrapper {
   margin-left: 120px;
@@ -373,13 +374,13 @@ template {
 
 .slider-item {
   display: none;
-  padding: 78px 0 80px 0; }
+  padding: 74px 0 80px 0; }
   .slider-item:nth-child(1) {
+    display: block;
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
-    background-position: 93% 18px; }
+    background-position: 451px 13px; }
   .slider-item:nth-child(2) {
-    display: block;
     background-image: url("../img/slide2.png");
     background-repeat: no-repeat;
     background-position: 100% 0; }
@@ -400,25 +401,23 @@ template {
 
 .slider-item__promo {
   max-width: 600px;
-  margin: 0;
-  margin-bottom: 27px;
+  margin: 0 20px 28px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500; }
 
 .slider-item__desc {
   max-width: 430px;
-  margin: 0;
-  margin-bottom: 38px; }
+  margin: 0 20px 40px;
+  line-height: 22px; }
 
 .page-header__slider-control {
   position: absolute;
-  left: 50%;
-  bottom: 104px;
+  left: 630px;
+  bottom: 102px;
   z-index: 100;
   width: 160px;
   height: 18px;
-  text-align: center;
   font-size: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
@@ -441,6 +440,7 @@ template {
   width: 18px;
   height: 18px;
   padding: 15px;
+  margin-right: 5px;
   border-radius: 50%;
   cursor: pointer; }
   .page-header__slider-control i:after {
@@ -457,22 +457,37 @@ template {
 .slider-item__button {
   display: block;
   width: 240px;
-  padding: 13px 0; }
+  padding: 16px 0;
+  margin-left: 20px; }
 
-.button-mod {
+.button {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  background-color: #fb565a;
   border-radius: 3px;
   border: none; }
-  .button-mod:hover, .button-mod:focus {
-    background-color: #e74246; }
-  .button-mod:active {
-    color: rgba(255, 255, 255, 0.3); }
+
+.offer-item__button {
+  display: block;
+  width: 160px;
+  padding: 15px; }
+
+.button-red {
+  background-color: #fb565a; }
+
+.button-green {
+  background-color: #00ca74; }
+
+.button-yellow {
+  background-color: #efc849; }
+
+.offer-wrap {
+  width: 1100px;
+  margin-left: 140px;
+  margin-top: 80px; }
 
 .offer-item {
   width: 300px;
@@ -509,7 +524,6 @@ template {
 
 .offer-list {
   display: flex;
-  width: 1100px;
   margin: 0 auto;
   padding: 0; }
 
@@ -517,10 +531,56 @@ template {
   font-size: 24px;
   line-height: 30px;
   font-weight: regular;
+  text-transform: uppercase;
+  margin-top: 26px;
+  margin-bottom: 10px;
   color: #000000; }
 
 .offer-item__text {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  color: #283136;
+  margin-bottom: 31px; }
+
+.info-wrap {
+  display: flex;
+  width: 1160px;
+  border-top: 2px solid #eeeeee;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.info-content__title {
+  font-size: 45px;
+  line-height: 45px; }
+
+.info-content__desc, .info-content__caption {
+  font-size: 16px;
+  line-height: 24px;
   color: #283136; }
+
+.info-content__caption {
+  text-transform: uppercase;
+  color: #000000; }
+
+.info-stats__text {
+  text-transform: uppercase; }
+
+.info-content__list {
+  color: #283136; }
+
+.stats-name__item {
+  font-size: 16px;
+  line-height: 18px;
+  color: #283136; }
+
+.info-stats::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 360px;
+  height: 260px;
+  background-image: url("../img/nerds-illustration.png");
+  background-repeat: no-repeat;
+  background-position: top; }

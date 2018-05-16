@@ -1,4 +1,6 @@
 $btn-c_red: #fb565a;
+$btn-c_green: #00ca74;
+$btn-c_yellow: #efc849;
 $btn-bg-hover: #e74246;
 $btn-bg-active: #d7373b;
 $btn-tx-c-active: rgba(255, 255, 255, 0.3);
@@ -7,10 +9,11 @@ $btn-tx_color: #ffffff;
 .slider-item__button {
 	display: block;
 	width: 240px;
-	padding: 13px 0;
+	padding: 16px 0;
+	margin-left: 20px;
 }
 
-.button-mod {
+.button {
 	font-size: 16px;
 	line-height: 18px;
 	color: $btn-tx_color;
@@ -18,16 +21,25 @@ $btn-tx_color: #ffffff;
 	text-align: center;
 	text-decoration: none;
 
-	background-color: $btn-c_red;
 	border-radius: 3px;
 	border: none;
-
-	&:hover,
-	&:focus {
-		background-color: $btn-bg-hover;
-	}
-
-	&:active {
-		color: $btn-tx-c-active;
-	}
 }
+
+.offer-item__button {
+	display: block;
+	width: 160px;
+	padding: 15px;
+}
+
+.button-red {
+	background-color: $btn-c_red;
+}
+
+.button-green {
+	background-color: $btn-c_green;
+}
+
+.button-yellow {
+	background-color: $btn-c_yellow;
+}
+
