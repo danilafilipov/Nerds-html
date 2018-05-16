@@ -552,8 +552,12 @@ template {
   margin-right: auto; }
 
 .info-content__title {
+  display: block;
   font-size: 45px;
-  line-height: 45px; }
+  line-height: 45px;
+  margin-top: 75px;
+  margin-bottom: 33px;
+  font-weight: 500; }
 
 .info-content__desc, .info-content__caption {
   font-size: 16px;
@@ -561,8 +565,11 @@ template {
   color: #283136; }
 
 .info-content__caption {
+  display: block;
   text-transform: uppercase;
-  color: #000000; }
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom: 27px; }
 
 .info-stats__text {
   text-transform: uppercase; }
@@ -584,3 +591,12 @@ template {
   background-image: url("../img/nerds-illustration.png");
   background-repeat: no-repeat;
   background-position: top; }
+
+.info-content__list {
+  padding-left: 35px; }
+
+.product-item:nth-child(1) {
+  margin-bottom: 30px; }
+
+.product-item:nth-child(2) {
+  margin-bottom: 30px; }
