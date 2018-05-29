@@ -14,7 +14,9 @@ a {
   text-decoration: none; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
 .visually-hidden {
   position: absolute;
@@ -460,7 +462,7 @@ template {
   padding: 16px 0;
   margin-left: 20px; }
 
-.button {
+.button, .modal-button__submit {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -483,6 +485,11 @@ template {
 
 .button-yellow {
   background-color: #efc849; }
+
+.modal-button__submit {
+  width: 260px;
+  height: 50px;
+  background-color: #fb565a; }
 
 .offer-wrap {
   width: 1100px;
@@ -541,7 +548,7 @@ template {
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-  margin-bottom: 31px; }
+  margin-bottom: 33px; }
 
 .info-wrap {
   display: flex;
@@ -572,6 +579,10 @@ template {
   margin-bottom: 27px; }
 
 .info-stats__text {
+  display: block;
+  margin-left: 152px;
+  margin-top: 30px;
+  margin-bottom: 31px;
   text-transform: uppercase; }
 
 .info-content__list {
@@ -588,11 +599,15 @@ template {
   position: relative;
   width: 360px;
   height: 260px;
+  top: 42px;
+  left: 45px;
+  margin-left: 91px;
   background-image: url("../img/nerds-illustration.png");
   background-repeat: no-repeat;
   background-position: top; }
 
 .info-content__list {
+  position: relative;
   padding-left: 35px; }
 
 .product-item:nth-child(1) {
@@ -600,3 +615,218 @@ template {
 
 .product-item:nth-child(2) {
   margin-bottom: 30px; }
+
+.dash::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 1px;
+  margin-top: 6px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a; }
+
+.info-stats__table {
+  margin-left: 135px; }
+
+.stats-number__item {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 69px;
+  margin-right: 20px;
+  color: #000000; }
+
+.stats-number {
+  display: flex;
+  margin-bottom: 8px; }
+
+.stats-name {
+  display: flex; }
+
+.stats-name__item:nth-child(1) {
+  margin-right: 27px; }
+
+.stats-name__item:nth-child(2) {
+  margin-right: 27px; }
+
+.stats-number__procent {
+  font-size: 30px; }
+
+.partners {
+  position: relative;
+  padding-top: 120px;
+  padding-left: 170px;
+  margin-bottom: 120px; }
+
+.partners::before, .partners::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 75px;
+  left: 140px;
+  width: 1160px;
+  height: 2px;
+  background-color: #eeeeee; }
+
+.partners::after {
+  top: 257px; }
+
+.partners-item:nth-child(2)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 142px;
+  left: 419px;
+  width: 2px;
+  height: 50px;
+  background-color: #eeeeee; }
+
+.partners-item:nth-child(3)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 142px;
+  left: 719px;
+  width: 2px;
+  height: 50px;
+  background-color: #eeeeee; }
+
+.partners-item:nth-child(3)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 142px;
+  left: 1019px;
+  width: 2px;
+  height: 50px;
+  background-color: #eeeeee; }
+
+.partners-list {
+  display: flex;
+  width: 1160px; }
+
+.partners-item:nth-child(1) {
+  padding-top: 19px;
+  margin-right: 97px; }
+
+.partners-item:nth-child(2) {
+  padding-top: 3px;
+  margin-right: 100px; }
+
+.partners-item:nth-child(3) {
+  padding-top: 22px;
+  padding-left: 3px;
+  margin-right: 120px; }
+
+.partners-item:nth-child(4) {
+  padding-top: 10px; }
+
+iframe {
+  width: 1440px;
+  height: 418px;
+  border: none; }
+
+.page-footer {
+  display: flex; }
+
+.social-button__link {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e1e1e1; }
+
+.social-button__link_vk::after, .social-button__link_fb::after, .social-button__link_insta::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 33px;
+  left: 27px;
+  width: 30px;
+  height: 18px;
+  background-image: url(../img/vk-icon.svg);
+  background-repeat: no-repeat; }
+
+.social-button__link_fb::after {
+  width: 15px;
+  height: 25px;
+  top: 29px;
+  left: 35px;
+  background-image: url(../img/fb-icon.svg); }
+
+.social-button__link_insta::after {
+  width: 23px;
+  height: 25px;
+  top: 30px;
+  left: 30px;
+  background-image: url(../img/insta-icon.svg); }
+
+.social-button {
+  display: flex;
+  margin-top: 58px;
+  margin-left: 135px; }
+
+.social-button__item {
+  padding: 5px; }
+
+.page-footer__title {
+  font-size: 36px;
+  line-height: 36px; }
+
+.page-footer__desc {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444; }
+
+.page-footer__lead {
+  margin-top: 70px;
+  margin-left: 134px; }
+
+.page-footer__desc {
+  margin-top: 10px; }
+
+.modal {
+  position: absolute;
+  width: 960px;
+  height: 590px; }
+
+.modal-wrap {
+  margin-top: 65px;
+  margin-right: 80px;
+  margin-bottom: 85px;
+  margin-left: 100px; }
+
+.modal-wrap_form {
+  display: flex;
+  margin-bottom: 30px; }
+
+.modal-title {
+  font-size: 45px;
+  line-height: 45px; }
+
+.modal-label__name, .modal-label__email {
+  font-size: 16px;
+  line-height: 18px; }
+
+.modal-button__submit {
+  display: block; }
+
+.modal-wrap_form-element {
+  display: flex;
+  flex-direction: column; }
+
+.modal-wrap_form-element:nth-child(2n) {
+  margin-left: 40px; }
+
+.modal-input__name, .modal-input__email {
+  width: 360px;
+  height: 50px;
+  padding-left: 14px; }
+
+.modal-input__text {
+  width: 760px;
+  height: 120px; }
+
+.modal-button__close {
+  display: none; }

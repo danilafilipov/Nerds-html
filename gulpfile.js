@@ -1,6 +1,7 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
+var watch = require("gulp-watch");
 var postcss = require("gulp-postcss");
 var posthtml = require("gulp-posthtml");
 var autoprefixer = require("autoprefixer");
@@ -26,6 +27,24 @@ gulp.task("style", function () {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
+});
+
+gulp.task('watch', function(){
+    watch([path.watch.html], function(event, cb) {
+        gulp.start('html:build');
+    });
+    watch([path.watch.style], function(event, cb) {
+        gulp.start('style:build');
+    });
+    watch([path.watch.js], function(event, cb) {
+        gulp.start('js:build');
+    });
+    watch([path.watch.img], function(event, cb) {
+        gulp.start('image:build');
+    });
+    watch([path.watch.fonts], function(event, cb) {
+        gulp.start('fonts:build');
+    });
 });
 
 gulp.task("sprite", function () {

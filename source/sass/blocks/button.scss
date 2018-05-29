@@ -43,3 +43,10 @@ $btn-tx_color: #ffffff;
 	background-color: $btn-c_yellow;
 }
 
+.modal-button__submit {
+	@extend .button;
+	width: 260px;
+	height: 50px;
+	background-color: $btn-c_red;
+}
+

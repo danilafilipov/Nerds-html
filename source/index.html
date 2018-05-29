@@ -101,25 +101,27 @@
 						<p class="info-content__desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
 						<b class="info-content__caption">выполняем заказы на разработку:</b>
 						<ul class="info-content__list product-list">
-							<li class="product-item">Веб-сайтов любой сложности</li>
-							<li class="product-item">Мобильных приложений для iOS и Android</li>
-							<li class="product-item">Слайдшоу и видео для корпоративных презентаций</li>
+							<li class="product-item dash">Веб-сайтов любой сложности</li>
+							<li class="product-item dash">Мобильных приложений для iOS и Android</li>
+							<li class="product-item dash">Слайдшоу и видео для корпоративных презентаций</li>
 						</ul>
 					</div>
 					<div class="info-stats">
-						<b class="info-stats__text">с 2004 года Любим точность во всем:</b>
-						<table class="info-stats__table stats-table">
-							<tr class="stats-table__list stats-number">
-								<td class="stats-number__item">146<span class="stats-number__sign">%</span></td>
-								<td class="stats-number__item">100<span class="stats-number__sign">%</span></td>
-								<td class="stats-number__item">50<span class="stats-number__sign">%</span></td>
-							</tr>
-							<tr class="stats-table__list stats-name">
-								<td class="stats-name__item">Уровень<br>самоотдачи</td>
-								<td class="stats-name__item">Соблюдение<br> сроков</td>
-								<td class="stats-name__item">Минимальная<br>предоплата</td>
-							</tr>
-						</table>
+						<div class="info-stats__wrap-table">
+							<b class="info-stats__text">с 2004 года Любим точность во всем:</b>
+							<div class="info-stats__table stats-table">
+								<ul class="stats-table__list stats-number">
+									<li class="stats-number__item">146<sup class="stats-number__procent">%</sup></li>
+									<li class="stats-number__item">100<sup class="stats-number__procent">%</sup></li>
+									<li class="stats-number__item">50<sup class="stats-number__procent">%</sup></li>
+								</ul>
+								<ul class="stats-table__list stats-name">
+									<li class="stats-name__item">Уровень<br>самоотдачи</li>
+									<li class="stats-name__item">Соблюдение<br> сроков</li>
+									<li class="stats-name__item">Минимальная<br>предоплата</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 		</section>
@@ -128,36 +130,42 @@
 			<h2 class="visually-hidden">Наши партнеры</h2>
 			<ul class="partners-list">
 				<li class="partners-item">
-					<img class="partners-item__img" src="">
+					<img class="partners-item__img" src="img/logo-1.png">
 				</li>
 				<li class="partners-item">
-					<img class="partners-item__img" src="">
+					<img class="partners-item__img" src="img/logo-2.png">
 				</li>
 				<li class="partners-item">
-					<img class="partners-item__img" src="">
+					<img class="partners-item__img" src="img/logo-3.png">
 				</li>
 				<li class="partners-item">
-					<img class="partners-item__img" src="">
+					<img class="partners-item__img" src="img/logo-4.png">
 				</li>
 			</ul>
 		</section>
 
-		<section class="map">
+		<section class="mapmarker" id="map">
 			<h2 class="visually-hidden">Карта</h2>
-			<iframe src=""></iframe>
+
 		</section>
 	</main>
 
 	<footer class="page-footer">
 		<ul class="page-footer__social-list social-button">
 			<li class="social-button__item">
-				<a class="social-button__link" href="#">Вконтакте</a>
+				<a class="social-button__link social-button__link_vk" href="#">
+					<span class="visually-hidden">Вконтакте</span>
+				</a>
 			</li>
 			<li class="social-button__item">
-				<a class="social-button__link" href="#">Facebook</a>
+				<a class="social-button__link social-button__link_fb" href="#">
+					<span class="visually-hidden">Facebook</span>
+				</a>
 			</li>
 			<li class="social-button__item">
-				<a class="social-button__link" href="#">Instagram</a>
+				<a class="social-button__link social-button__link_insta" href="#">
+					<span class="visually-hidden">Instagram</span>
+				</a>
 			</li>
 		</ul>
 		<div class="page-footer__lead">
@@ -167,19 +175,34 @@
 	</footer>
 
 	<section class="modal">
-		<div class="modal-wrapper">
+		<div class="modal-wrap">
 			<h2 class="modal-title">Напишите нам</h2>
 			<form class="modal-form" method="post" action="https://echo.htmlacademy.ru">
-				<label class="modal-label__name" for="name">Ваше имя:</label>
-				<input class="modal-input__name" type="text" name="name" id="name" placeholder="Имя Фамилия">
-				<label class="modal-label__email" for="email">Ваш e-mail:</label>
-				<input class="modal-input__email" type="email" name="email" id="email" placeholder="email@example.com">
-				<label class="modal-label__text" for="text">Текст письма:</label>
-				<input class="modal-input__text" type="text" name="text" placeholder="В свободной форме">
+				<div class="modal-wrap_form">
+					<div class="modal-wrap_form-element">
+						<label class="modal-label__name" for="name">Ваше имя:</label>
+						<input class="modal-input__name" type="text" name="name" id="name" placeholder="Имя Фамилия">
+					</div>
+					<div class="modal-wrap_form-element">
+						<label class="modal-label__email" for="email">Ваш e-mail:</label>
+						<input class="modal-input__email" type="email" name="email" id="email" placeholder="email@example.com">
+					</div>
+				</div>
+				<div class="modal-wrap_form">
+					<div class="modal-wrap_form-element">
+						<label class="modal-label__text" for="text">Текст письма:</label>
+						<textarea class="modal-input__text" rows="5" name="text" placeholder="В свободной форме"></textarea>
+					</div>
+				</div>
 				<button class="modal-button__submit" type="submit">Отправить</button>
 				<button class="modal-button__close" type="button">Закрыть</button>
 			</form>
 		</div>
 	</section>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+	<script type="text/javascript" src="js/map.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeMJzwhK8wTHFCxfiFWegkPU7Y8AGlrwg"></script>
 </body>
 </html>
