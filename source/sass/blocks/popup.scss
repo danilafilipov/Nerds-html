@@ -1,7 +1,9 @@
 .modal {
+	display: none;
 	position: absolute;
 	width: 960px;
 	height: 590px;
+	box-shadow: 6px -6px 61px 0 #000;
 }
 
 .modal-wrap {

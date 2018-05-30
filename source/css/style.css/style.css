@@ -463,6 +463,7 @@ template {
   margin-left: 20px; }
 
 .button, .modal-button__submit {
+  display: block;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -489,6 +490,12 @@ template {
 .modal-button__submit {
   width: 260px;
   height: 50px;
+  background-color: #fb565a; }
+
+.address-button {
+  width: 220px;
+  height: 50px;
+  cursor: pointer;
   background-color: #fb565a; }
 
 .offer-wrap {
@@ -580,7 +587,7 @@ template {
 
 .info-stats__text {
   display: block;
-  margin-left: 152px;
+  margin-left: 166px;
   margin-top: 30px;
   margin-bottom: 31px;
   text-transform: uppercase; }
@@ -601,7 +608,7 @@ template {
   height: 260px;
   top: 42px;
   left: 45px;
-  margin-left: 91px;
+  margin-left: 105px;
   background-image: url("../img/nerds-illustration.png");
   background-repeat: no-repeat;
   background-position: top; }
@@ -627,7 +634,7 @@ template {
   background-color: #fb565a; }
 
 .info-stats__table {
-  margin-left: 135px; }
+  margin-left: 150px; }
 
 .stats-number__item {
   font-size: 45px;
@@ -721,10 +728,43 @@ template {
 .partners-item:nth-child(4) {
   padding-top: 10px; }
 
-iframe {
-  width: 1440px;
+#map {
+  width: 100%;
   height: 418px;
   border: none; }
+
+.map {
+  position: relative; }
+
+.address {
+  display: block;
+  position: absolute;
+  top: 55px;
+  left: 140px;
+  width: 320px;
+  height: 310px;
+  padding: 30px 20px 0 50px;
+  z-index: 1;
+  background-color: #ffffff; }
+
+.address-title_size {
+  font-size: 18px;
+  line-height: 30px; }
+
+.address-location_size, .address-telephone_size {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666; }
+
+.address-title_position {
+  margin-bottom: 23px; }
+
+.address-location_position {
+  margin-bottom: 19px; }
+
+.address-telephone_position {
+  display: block;
+  margin-bottom: 35px; }
 
 .page-footer {
   display: flex; }
@@ -787,9 +827,11 @@ iframe {
   margin-top: 10px; }
 
 .modal {
+  display: none;
   position: absolute;
   width: 960px;
-  height: 590px; }
+  height: 590px;
+  box-shadow: 6px -6px 61px 0 #000; }
 
 .modal-wrap {
   margin-top: 65px;

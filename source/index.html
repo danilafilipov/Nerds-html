@@ -144,9 +144,15 @@
 			</ul>
 		</section>
 
-		<section class="mapmarker" id="map">
+		<section class="map">
 			<h2 class="visually-hidden">Карта</h2>
-
+			<div id="map"></div>
+			<div class="address">
+				<h3 class="address-title address-title_size address-title_position">NЁRDS DESIGN STUDIO</h3>
+				<address class="address-location address-location_size address-location_position">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</address>
+				<a class="address-telephone address-telephone_size address-telephone_position" href="+7 (812) 275-75-75">тел. +7 (812) 275-75-75</a>
+				<button class="button address-button" type="button">Напишите нам</button>
+			</div>
 		</section>
 	</main>
 
@@ -200,9 +206,7 @@
 		</div>
 	</section>
 
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
-	<script type="text/javascript" src="js/map.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeMJzwhK8wTHFCxfiFWegkPU7Y8AGlrwg"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7eAcrNmlTDsvm91oUSNJUc1Q0aBl5coI&callback=initMap"></script>
 </body>
 </html>
