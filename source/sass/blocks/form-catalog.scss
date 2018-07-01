@@ -1,0 +1,157 @@
+.catalog-form {
+	margin-left: 120px;
+}
+
+.user-form__fs {
+	display: flex;
+	border: none;
+}
+
+.catalog-form__user-form .user-form__fs:nth-child(2) {
+	margin-bottom: 15px;
+}
+
+.range-controls__wrapper {
+	margin-top: 42px;
+	margin-left: 6px;
+	margin-bottom: 15px;
+}
+
+.user_form__range-control {
+	position: relative;
+	width: 260px;
+	height: 80px;
+	padding-top: 39px;
+	padding-left: 20px;
+	background-color: #eeeeee;
+}
+
+.range-control__scale {
+	width: 210px;
+	height: 2px;
+	background-color: #d7dcde;
+}
+
+.range-control__bar {
+	@extend .range-control__scale;
+	width: 140px;
+	background-color: #00ca74;
+}
+
+.range-toggle {
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 20px;
+	top: 30px;
+	background-image: url("../img/filter-button.svg");
+}
+
+.range-control__toggle-min {
+	left: 18px;
+}
+
+.range-control__toggle-max {
+	right: 80px;
+}
+
+.user-form__wrap-checkbox {
+	margin-top: 15px;
+}
+
+.price-input {
+	width: 80px;
+	height: 37px;
+	border: 0;
+	background-color: #eee;
+	margin-left: 12px;
+	text-align: center;
+}
+
+.price-control {
+	font-size: 16px;
+	line-height: 22px;
+	color: #283136;
+	text-transform: uppercase;
+}
+
+.price-control__min {
+
+}
+
+.price-control__max {
+	margin-left: 28px;
+}
+
+.price-control__wrapper {
+	margin-left: 6px;
+	margin-bottom: 45px;
+}
+
+.user-form__legend {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+.user-form__radio_label-text {
+	display: block;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	color: #283136;
+	margin-left: 42px;
+	margin-top: 10px;
+}
+
+.user-form__wrap-radio li {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.user-form__radio_button:checked + label::before {
+	background-image: url("../img/radio-on.svg");
+}
+
+.user-form__radio_button + label::before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 7px;
+	top: -3px;
+	background-image: url("../img/radio-off.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.user-form__label_text {
+	margin-left: 40px;
+}
+
+.user-form__wrap-checkbox li {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.user-form__checkbox:checked + label::before {
+	background-image: url("../img/checkbox-on.svg");
+}
+
+.user-form__checkbox + label::before {
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 23px;
+	top: 0;
+	left: 0;
+	background-image: url("../img/checkbox-off.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+

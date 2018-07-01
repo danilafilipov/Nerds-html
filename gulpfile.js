@@ -1,7 +1,6 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
-var watch = require("gulp-watch");
 var postcss = require("gulp-postcss");
 var posthtml = require("gulp-posthtml");
 var autoprefixer = require("autoprefixer");
@@ -22,30 +21,23 @@ gulp.task("style", function () {
     .pipe(postcss([
         autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css/style.css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
-gulp.task('watch', function(){
-    watch([path.watch.html], function(event, cb) {
-        gulp.start('html:build');
-    });
-    watch([path.watch.style], function(event, cb) {
-        gulp.start('style:build');
-    });
-    watch([path.watch.js], function(event, cb) {
-        gulp.start('js:build');
-    });
-    watch([path.watch.img], function(event, cb) {
-        gulp.start('image:build');
-    });
-    watch([path.watch.fonts], function(event, cb) {
-        gulp.start('fonts:build');
-    });
+gulp.task("server", ["style"], function() {
+  server.init({
+    server: "source/"
+  });
+
+	gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
+	gulp.watch("source/*.html")
+		.on("change", server.reload);
 });
+
 
 gulp.task("sprite", function () {
 	return gulp.src("source/img/icon-*.svg")
@@ -77,11 +69,12 @@ gulp.task("html", function () {
 	.pipe(posthtml([
 		include()
 		]))
-	.pipe(gulp.dest("source"));
+	.pipe(gulp.dest("build"));
 });
 
 gulp.task("copy", function (){
 	return gulp.src([   
+		"source/css/**",
 		"source/fonts/**/*.{woff,woff2}",
 		"source/img/**",
 		"source/js/**"
@@ -95,17 +88,10 @@ gulp.task("clean", function () {
 	return del("build/");
 });
 
-gulp.task("serve", ["style"], function() {
-	server.init({
-		server: "source/"
-	});
-
-	gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-	gulp.watch("source/*.html")
-		.on("change", server.reload);
+gulp.task("build", function(done) {
+  run("copy", "style", "sprite", "html", done);
 });
 
-gulp.task("build", function (done) {
-	run("style", "sprite", "html", done);
-});
+
+
 

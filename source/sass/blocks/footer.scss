@@ -9,6 +9,9 @@
 	height: 80px;
 	border-radius: 50%;
 	background-color: #e1e1e1;
+	&:hover {
+		background-color: #e74246;
+	}
 }
 
 .social-button__link_vk::after {
@@ -21,6 +24,10 @@
 	height: 18px;
 	background-image: url(../img/vk-icon.svg);
 	background-repeat: no-repeat;
+	&:active {
+		fill: rgba(255, 255, 255, 0.3);
+		background-color: #d7373b;
+	}
 }
 
 .social-button__link_fb::after {

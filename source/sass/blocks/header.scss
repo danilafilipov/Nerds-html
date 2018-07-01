@@ -1,5 +1,4 @@
 .page-header {
-	min-height: 545px;
 	background-color: #eeeeee;
 }
 
@@ -8,30 +7,38 @@
 	margin-right: 120px;
 }
 
-.logo-link__image {
+.page-header__logo-link_image {
 	margin-left: 20px;
 	margin-top: 50px;
+	&:hover {
+		fill: #303030;
+	}
+	&:active {
+		fill: #a6a6a6;
+	}
 }
 
-.page-header__main-nav {
+.page-header__nav {
 	display: flex;
 }
 
-.main-nav__list {
+.nav__list {
 	display: flex;
 	margin: 0;
 	padding: 0;
-
 	margin-top: 75px;
+}
+
+.site-list {
 	margin-left: 200px;
 }
 
-.site-link {
-	text-transform: uppercase;
+.user-list {
+	margin-left: 245px;
 }
 
-.user-link {
-	text-transform: uppercase;
+.user-list-image__item {
+	margin-top: 7px;
 }
 
 .site-list__item {
@@ -51,8 +58,8 @@
 }
 
 .user-list__item {
-	width: 160px;
 	text-align: right;
+	margin-left: 25px;
 }
 
 .site-link {
@@ -60,6 +67,13 @@
 	font-weight: 500;
 	line-height: 30px;
 	color: #000000;
+	text-transform: uppercase;
+	&:hover {
+		color: #fb565a;
+	}
+	&:active {
+	color: #a6a6a6;
+	}
 }
 
 .user-link {

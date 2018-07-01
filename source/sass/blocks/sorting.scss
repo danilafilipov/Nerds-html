@@ -1,0 +1,40 @@
+.catalog-sorting {
+	display: flex;
+	margin-bottom: 41px;
+}
+
+.sorting__list {
+	display: flex;
+	margin-left: 267px;
+	margin-top: 5px;
+}
+
+.sorting__item {
+	margin-right: 25px;
+}
+
+.sorting__link {
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.sorting__name {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 18px;
+	text-transform: uppercase;
+	margin-left: 125px;
+	margin-top: 4px;
+}
+
+.sorting__regularity {
+	margin-left: 25px;
+	margin-top: 4px;
+}
+
+.sorting__regularity-link:nth-child(2n) {
+	margin-left: 14px;
+}
+

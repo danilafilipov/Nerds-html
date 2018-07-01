@@ -1,0 +1,90 @@
+.catalog-wrap {
+	display: flex;
+}
+
+.catalog-wrap_title {
+	background-color: #eeeeee;
+	margin-bottom: 60px;
+}
+
+.catalog-title_size {
+	font-size: 55px;
+	line-height: 55px;
+	margin: 0;
+	padding-top: 73px;
+	padding-right:  355px;
+	padding-bottom: 103px;
+	padding-left: 355px;
+}
+
+.catalog-template__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 126px;
+	margin-bottom: 30px;
+}
+
+.catalog-template__item {
+	min-height: 615px;
+	width: 360px;
+	margin-right: 40px;
+	margin-bottom: 33px;
+}
+
+.template-sedona {
+	background-image: url("../img/img-sedona.png");
+	background-repeat: no-repeat;
+	background-position: 0 39px;
+}
+
+.template-pink {
+	background-image: url("../img/img-pink.png");
+	background-repeat: no-repeat;
+	background-position: 0 39px;
+}
+
+.template-barbershop {
+	background-image: url("../img/img-barbershop.png");
+	background-repeat: no-repeat;
+	background-position: 0 39px;
+}
+
+.template-mishka {
+	background-image: url("../img/img-mishka.png");
+	background-repeat: no-repeat;
+	background-position: 0 39px;
+}
+
+.template-aplus {
+	background-image: url("../img/img-aplus.png");
+	background-repeat: no-repeat;
+	background-position: 0 39px;
+}
+
+.template-kvast {
+	background-image: url("../img/img-kvast.png");
+	background-repeat: no-repeat;
+	background-position: 0 39px;
+}
+
+.catalog-template_hover {
+	display: none;
+}
+
+.catalog-pagination {
+	margin-left: 127px;
+	margin-bottom: 60px;
+}
+
+.catalog-pagination_button {
+	width: 50px;
+	height: 50px;
+	background-color: #ffffff;
+	border: 2px solid #dbdbdb;
+	border-radius: 4px;
+	margin-right: 10px;
+}
+
+.catalog-pagination_button:nth-child(4n) {
+	width: 260px;
+}

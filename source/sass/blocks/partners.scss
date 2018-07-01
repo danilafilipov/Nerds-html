@@ -5,6 +5,19 @@
 	margin-bottom: 120px;
 }
 
+.partners-item__img {
+	opacity: 0.3;
+}
+
+.partners-item__img:hover {
+	opacity: 1;
+}
+
+.partners-item__img:active {
+	opacity: 0.1;
+}
+
+
 .partners::before {
 	content: "";
 	display: block;

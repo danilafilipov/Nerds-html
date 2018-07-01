@@ -11,6 +11,13 @@ $btn-tx_color: #ffffff;
 	width: 240px;
 	padding: 16px 0;
 	margin-left: 20px;
+	&:hover {
+		background-color: $btn-bg-hover;
+	}
+	&:active {
+		background-color: $btn-bg-active;
+		color: $btn-tx-c-active;
+	}
 }
 
 .button {
@@ -34,14 +41,35 @@ $btn-tx_color: #ffffff;
 
 .button-red {
 	background-color: $btn-c_red;
+	&:hover {
+		background-color: $btn-bg-hover;
+	}
+	&:active {
+		background-color: $btn-bg-active;
+		color: $btn-tx-c-active;
+	}
 }
 
 .button-green {
 	background-color: $btn-c_green;
+	&:hover {
+		background-color: #00bc6c;
+	}
+	&:active {
+		background-color: #00aa62;
+		color: $btn-tx-c-active;
+	}
 }
 
 .button-yellow {
 	background-color: $btn-c_yellow;
+	&:hover {
+		background-color: #eab534;
+	}
+	&:active {
+		background-color: #e5a722;
+		color: $btn-tx-c-active;
+	}
 }
 
 .modal-button__submit {
@@ -56,4 +84,18 @@ $btn-tx_color: #ffffff;
 	height: 50px;
 	cursor: pointer;
 	background-color: $btn-c_red;
+	&:hover {
+		background-color: $btn-bg-hover;
+	}
+	&:active {
+		background-color: $btn-bg-active;
+		color: $btn-tx-c-active;
+	}
+}
+
+.user-form__button {
+	@extend .modal-button__submit;
+	font-weight: bold;
+	background-color: #d4d4d4;
+	color: #000000;
 }
